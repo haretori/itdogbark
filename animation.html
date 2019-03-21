@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .animation{
+            transition:
+                border-color: 5s ease-in 3s;
+                font-size: 5s ease-in 3s;
+            background-color: forestgreen;
+            width: 200px;
+            height: 40px;
+            transition: 
+                border-color:0.5s ease-in 1s;
+                font-size: 5s ease-in 3s;
+                transform: 5s linear;
+        }
+        h1{
+            text-align: center;
+        }
+        h1:hover{
+            color: whitesmoke;
+        }
+        .animation:hover{
+/*            transform: translate(15px, 70px);*/
+/*            transform: rotate(70deg);*/
+/*            transform: skewX(15deg);*/
+            transform-origin: right bottom;
+            transform: scale(0.8, 1.4) skewX(20deg) rotate(20deg);
+        }
+    </style>
+</head>
+    
+<body>
+    <div class="animation">
+        <h1>Testing</h1>
+    </div>
+</body>
+</html>
