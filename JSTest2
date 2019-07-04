@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Another JavaScript test 20190704</title>
+</head>
+<body>
+<h2>Show string length by .length</h2>
+<script>
+var textString = "Sorrento";
+document.write(textString.length);
+</script>
+</body>
+</html>
