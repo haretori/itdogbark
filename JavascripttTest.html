@@ -8,16 +8,15 @@
    function changeText() {
      document.getElementById("changeTextTest").innerHTML = "It freaking works! lol";
    }
+   //Define a string variable for .length function
    var testText = "Sorrento"
-   function showTextLength() {
-     document.getElementById("textLength").innerHTML = (testText.length);
-   }
   </script>
  </head>
  <body>
    <h2>Showing pop-up when page load, body script</h2>
   <p id="popupTest">This will show a pop-up when page load</p>
   
+  //A pop-up shown when the site is loaded
   <script>
    window.alert(":catshake:")
   </script> 
@@ -27,7 +26,7 @@
   <button type="button" onclick="changeText()">Click me!</button>
   
   <h2>Showing string length by .length</h2>
-  <p id="textLength">showTextLength()</p>
+  document.write(testText.length)
   
  </body>
 </html>
