@@ -36,7 +36,7 @@
     var minute = ima.getMinutes();
     var second = ima.getSeconds();
     var day = ima.getDay();
-    var stringDate = "";
+    var stringDay = "";
     
     switch (day){
       case 1: stringDate = "(一)";
@@ -54,7 +54,8 @@
       case 0: stringDate = "(日)";
         break;
     }
-    document.write("現在時間是: " + year + "年 " + month + "月 " + date + "日 " + day + hour + "時 " + minute + "分 " + second + "秒 ")
+    document.write("現在時間是: " + year + "年 " + month + "月 " + date + "日 " + stringDay 
+                   + hour + "時 " + minute + "分 " + second + "秒 ")
   </script>
 </body>
 </html>
