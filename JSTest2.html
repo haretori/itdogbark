@@ -7,7 +7,7 @@
   
   <h2>Show string length by .length</h2>
   <script>
-    var textString = " soryanto";
+    var textString = "sorrento";
     document.write("Text length of " + textString + " is: " + textString.length);
   </script>
   
@@ -21,6 +21,8 @@
   <h2>Show the date and time now</h2>
   <script>
     var now = new Date();
-    document.write("The date and time now is: " + now.getFullYear() + (now.getMonth()+1) + now.getDate() );
+    document.write("The date and time now is: " + now.getFullYear() + (now.getMonth()+1) + now.getDate() + now.getDay() 
+                   + now.getHours() + now.getMinutes() + now.getSeconds() );
+  </script>
 </body>
 </html>
