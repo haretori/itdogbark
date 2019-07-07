@@ -39,23 +39,27 @@
     var stringDay = "";
     
     switch (day){
-      case 1: stringDate = "(一)";
+      case 1: stringDay = "(一)";
         break;
-      case 2: stringDate = "(二)";
+      case 2: stringDay = "(二)";
         break;
-      case 3: stringDate = "(三)";
+      case 3: stringDay = "(三)";
         break;
-      case 4: stringDate = "(四)";
+      case 4: stringDay = "(四)";
         break;
-      case 5: stringDate = "(五)";
+      case 5: stringDay = "(五)";
         break;
-      case 6: stringDate = "(六)";
+      case 6: stringDay = "(六)";
         break;
-      case 0: stringDate = "(日)";
+      case 0: stringDay = "(日)";
         break;
     }
-    document.write("現在時間是: " + year + "年 " + month + "月 " + date + "日 " + stringDay 
-                   + hour + "時 " + minute + "分 " + second + "秒 ")
+    
+    var dateTimeDisplay = year + "年 " + month + "月 " + date + "日 " + stringDay 
+                   + hour + "時 " + minute + "分 " + second + "秒 ";
+    document.write("現在時間是: " + dateTimeDisplay + "<br>");
+    document.write("依電腦格式顯示時間: " + dateTimeDisplay.toLocaleString());
   </script>
+  
 </body>
 </html>
