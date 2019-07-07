@@ -18,12 +18,43 @@
     document.write(secondString + " displayed in lowercase: " + secondString.toLowerCase());
   </script>
   
-  <h2>Show the date and time now</h2>
+  <h2>Show the date and time now in numbers</h2>
   <script>
     var now = new Date();
     document.write("The date and time now is: " + now.getFullYear() + " " + (now.getMonth()+1) + " " + now.getDate() + " " 
                    + now.getDay() + " " +
                    + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() );
+  </script>
+  
+  <h2>Show the date and time in normal view</h2>
+  <script>
+    var ima = new Date();
+    var year = ima.getFullYear();
+    var month = ima.getMonth()+1;
+    var date = ima.getDate();
+    var hour = ima.getHours();
+    var minute = ima.getMinutes();
+    var second = ima.getSeconds();
+    var day = ima.getDay();
+    var stringDate = "";
+    
+    switch (day){
+      case 1: stringDate = "(一)";
+        break;
+      case 2: stringDate = "(二)";
+        break;
+      case 3: stringDate = "(三)";
+        break;
+      case 4: stringDate = "(四)";
+        break;
+      case 5: stringDate = "(五)";
+        break;
+      case 6: stringDate = "(六)";
+        break;
+      case 0: stringDate = "(日)";
+        break;
+    }
+    document.write("現在時間是: " + year + "年 " + month + "月 " + date + "日 " + day + hour + "時 " + minute + "分 " + second + "秒 ")
   </script>
 </body>
 </html>
