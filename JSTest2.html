@@ -62,5 +62,15 @@
     document.write("依電腦格式顯示時間: " + dateTimeDisplay.toLocaleString());
   </script>
   
+  <h2>Show sum of 2 numbers</h2>
+  <button type="button" onclick="addition()">Click for an addition calculator</button>
+  <script>
+    function addition(){
+      var number1 = prompt("請輸入第一個數字:");
+      var number2 = prompt("請輸入第二個數字:");
+      alert(number1 +" " + number2 + " "+"總數為:" + (number1+number2));
+    }
+  </script>
+  
 </body>
 </html>
